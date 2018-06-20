@@ -1,12 +1,15 @@
-const sh = require('shelljs')
-const ch = require('chalk')
+const utils = require('./utils')
 
 exports.createNewFeature = (id) => {
-    if (sh.which('git')) {
-        // shell.echo('Sorry, this script requires git');
-        // shell.exit(1);
-        sh.exec(`git checkout master && git checkout -b feature/${id}`, () => {
-
-        })
-    }
+	utils.buildBranch(`feature/${id}`)
 }
+
+exports.createNewHotfix = (id) => {
+	utils.buildBranch(`hotfix/${id}`)
+}
+
+exports.createNewMerge = (id, type) => {
+	utils.buildBranch(`merge/${id}`, type)
+}
+
+exports.deleteBranch = utils.deleteBranch
