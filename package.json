@@ -1,0 +1,15 @@
+{
+  "name": "my-git-flow",
+  "version": "1.0.0",
+  "description": "Check the flow with git flow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Junrill Galvez",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "shelljs": "^0.8.2"
+  }
+}
