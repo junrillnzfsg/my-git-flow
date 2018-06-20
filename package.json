@@ -9,6 +9,7 @@
   "author": "Junrill Galvez",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^2.4.1",
     "commander": "^2.15.1",
     "shelljs": "^0.8.2"
   }
